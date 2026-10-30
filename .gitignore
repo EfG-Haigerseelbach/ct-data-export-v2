@@ -1,0 +1,21 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+config/local.json
+config/export.json
+config/export.json.*.tmp
+var/
+*.log
+
+# Lokale Sicherungen, Schlüssel und Betriebssystemdateien
+*.bak
+*.pem
+*.key
+*.ppk
+.DS_Store
+Thumbs.db
+.repo-check-*/
+
+VORSCHLAG.md

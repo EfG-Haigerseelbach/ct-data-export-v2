@@ -1,0 +1,26 @@
+{
+  "export": {
+    "accessPath": {
+      "exposureIndicator": "information.website_expose",
+      "categoryData": "information.website_groupcategory_ids",
+      "targetGroupIds": "information.website_targetgroup_ids",
+      "agecategory": "information.website_agecategory",
+      "recurrenceDescription": "information.website_recurrence_description",
+      "contactPersonIds": "information.website_contact_person_ids",
+      "showOnLandingPage": "information.website_show_on_landing_page"
+    },
+    "person": {
+      "attributeThatIndicatesToExport": "website_expose",
+      "sortOrder": "website_person_sort_order"
+    },
+    "wordpress": {
+      "contactsTriggerUrl": "https://wordpress.example/wp-load.php?import_key=BEISPIEL_IMPORT_KEY&import_id=12&action=trigger",
+      "contactsProcessingUrl": "https://wordpress.example/wp-load.php?import_key=BEISPIEL_IMPORT_KEY&import_id=12&action=processing",
+      "offersTriggerUrl": "https://wordpress.example/wp-load.php?import_key=BEISPIEL_IMPORT_KEY&import_id=13&action=trigger",
+      "offersProcessingUrl": "https://wordpress.example/wp-load.php?import_key=BEISPIEL_IMPORT_KEY&import_id=13&action=processing"
+    },
+    "email": {
+      "preferredContactLabelId": 7
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "@efg-haigerseelbach/ct-data-export",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "ChurchTools-Daten mit Weboberfläche abrufen, archivieren und an WordPress übertragen",
+  "engines": {
+    "node": ">=24 <25"
+  },
+  "scripts": {
+    "start": "tsx src/web/main.ts",
+    "start:built": "node dist/src/web/main.js",
+    "user:create": "tsx src/web/setup.ts",
+    "ct:check": "tsx src/churchtools/cli.ts",
+    "build": "tsc",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test test/*.test.ts",
+    "validate": "tsx src/cli.ts",
+    "check": "npm run typecheck && npm test"
+  },
+  "dependencies": {
+    "@churchtools/churchtools-client": "1.7.3",
+    "axios-cookiejar-support": "6.0.5",
+    "sharp": "^0.35.5",
+    "ssh2-sftp-client": "^12.1.1",
+    "tough-cookie": "6.0.2",
+    "zod": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "@types/ssh2-sftp-client": "^9.0.6",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}
